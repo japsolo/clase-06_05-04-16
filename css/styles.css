@@ -27,7 +27,7 @@ ul{
 }
 
 header{
-	width: 1200px;
+	max-width: 1200px;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -60,7 +60,7 @@ nav a{
 }
 
 .wrapper{
-	width: 1200px;
+	max-width: 1200px;
 	margin: auto;
 	/*background-color: rgba(255,0,0,0.5);*/
 }
@@ -90,7 +90,7 @@ da estilo a un elemento que se encuentre INMEDIATAMENTE después de otro, siempr
 }
 
 .buscador input[type=text]{
-	width: calc(100% - 200px);
+	width: 84%;
 	height: 70px;
 	border: solid 1px #ccc;
 	font-family: inherit;
@@ -100,7 +100,9 @@ da estilo a un elemento que se encuentre INMEDIATAMENTE después de otro, siempr
 }
 
 .buscador input[type=submit]{
-	width: 200px;
+	/*width: 200px;*/
+	width: 16%;
+
 	height: 70px;
 	background-color: #63BBDE;
 	color: #fff;
@@ -119,18 +121,22 @@ da estilo a un elemento que se encuentre INMEDIATAMENTE después de otro, siempr
 
 .servicios-destacados article{
 	text-align: center;
-	width: 300px;
+	/*width: 300px;*/
+	width: 25%;
 	float: left;
 	padding: 0 25px;
 	position: relative;
 	/*line-height: 0;*/
 }
 
+
+
 /*.servicios-destacados article:hover{
 	background-color: #333;
 }*/
 
 .servicios-destacados article img{
+	width: 33.333333333333%;
 	transition: all 250ms ease-in;
 	-webkit-transition: all 250ms ease-in;
 	border-radius: 50%;
@@ -158,13 +164,18 @@ da estilo a un elemento que se encuentre INMEDIATAMENTE después de otro, siempr
 
 .caracteristicas{
 	float: left;
-	width: 350px;
+	/*width: 350px;*/
+	width: 29.166666666667%;
 }
 
 .imagen-mitad{
-	width: 300px;
+	/*width: 300px;*/
+	width: 25%;
 	float: left;
-	margin: 0 100px;	
+	margin: 0 8.333333333333%;	
+}
+.imagen-mitad img{
+	width: 100%;
 }
 
 .caract-izq article{
@@ -221,12 +232,13 @@ table, td, tr{
 }
 
 .box-price{
-	width: 270px;
+	/*width: 270px;*/
+	width: 22.5%;
 	float: left;
 	background-color: #fff;
 	box-shadow: 0 0 5px rgba(0,0,0,0.3);
 	padding: 15px;
-	margin-right: 40px;
+	margin-right: 3.333333333333%;
 }
 
 .last{
@@ -272,4 +284,19 @@ table, td, tr{
 	display:block;
 	border-bottom: solid 1px #ccc;
 	padding-bottom: 20px;
+}
+
+@media (max-width: 860px){
+	.wrapper{
+		width: 96%;
+	}
+	header nav{
+		display: inline-block;
+		float: none;
+		margin-left: 18%;
+	}
+	.servicios-destacados article{
+		width: 50%;
+		min-height: 380px;
+	}
 }
